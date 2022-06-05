@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/base-style.css" />
+    <link rel="stylesheet" href="../css/components-style.css">
+    <link rel="stylesheet" href="../css/home-layout.css">
+    <link rel="stylesheet" href="../css/settings-layout.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="icon" type="image/png" href="../img/logoUpet.png" />
+    <title>U-pet</title>
+</head>
+
+<body>
+    <section class="main-theme">
+        <div class="parTop-settingspage-sec">
+            <a href="account-page.html"><i class="fas fa-arrow-left arrow"></i></a>
+            <div class="my_info">
+                <div class="sec-card succes" id="success" style="display:none">
+                    <h4 class="card-title sb-tl-text">Success <i class="fas fa-check-circle"></i></h4>
+                    <p class="card-text bd-text"> Questa card è un modello</p>
+                </div>
+                <div class="sec-card alert" id="alert" style="display:none">
+                    <h4 class="card-title sb-tl-text">Alert <i class="fas fa-exclamation-triangle"></i></h4>
+                    <p class="card-text bd-text"> Questa card è un modello Alert</p>
+                </div>
+                <div class="sec-card error" id="error" style="display:none">
+                    <h4 class="card-title sb-tl-text">Error <i class="fas fa-exclamation-circle"></i></h4>
+                    <p class="card-text bd-text"> Questa card è un modello Error</p>
+                </div>
+                <img class="user-account-img" src="https://avatars.githubusercontent.com/u/40248211?v=4"
+                    alt="user icon">
+                <input type="file" id="img-file" name="user-img" value="Change your image">
+                <button class="button_theme2 bd-text" id="upload">Upload</button>
+                <div class="input_field_theme bd-text">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Name" class="input_field" id="name">
+                </div>
+                <div class="input_field_theme bd-text">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Surname" class="input_field" id="surname">
+                </div>
+                <div class="input_field_theme bd-text">
+                    <i class="fas fa-birthday-cake"></i>
+                    <input type="date" placeholder="Birth" class="input_field" id="birth">
+                </div>
+                <div class="input_field_theme bd-text">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Location" class="input_field" id="location">
+                </div>
+                <div class="input_field_theme bd-text">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="email" class="input_field" id="email">
+                </div>
+                <textarea class="input_field_theme" rows="8" cols="80" placeholder="Add a Bio" id="bio"></textarea>
+                <div class="buttons">
+                    <button class="button_theme bd-text" id="save">Save</button>
+                    <button class="button_theme2 bd-text" id="cancel">Cancel</button>
+                    <button class="button_theme3 bd-text" id="logout">Log out</button>
+                </div>
+            </div>
+
+            <div class="my_animals">
+                <h2 class="tl-text">My pets</h2>
+                <div class="my_pet">
+                    <div class="show-card-set">
+                        <div class="show-card-sp">
+                            <img
+                                src="https://th.bing.com/th/id/OIP.c_jHiohp04v0O9D6tcys9AHaFj?w=232&h=180&c=7&o=5&pid=1.7">
+                        </div>
+                        <h3 class="bd-text">Luna</h3>
+                    </div>
+                    <div class="show-card-set">
+                        <div class="show-card-sp">
+                            <img
+                                src="https://4.bp.blogspot.com/-qamBY31QVwQ/ThtcXzeRXzI/AAAAAAAAAB0/E4uYk2bYbsM/s1600/Betta-Fish-Pic.jpg">
+                        </div>
+                        <h3 class="bd-text">Fiocco</h3>
+                    </div>
+                    <div class="show-card-set">
+                        <div class="show-card-sp">
+                            <img
+                                src="https://th.bing.com/th/id/R30e77f093500e6beb29f7aa05ff2c7d9?rik=qs2frOiR71kclw&pid=ImgRaw">
+                        </div>
+                        <h3 class="bd-text">Macchia</h3>
+                    </div>
+                    <div class="show-card-add">
+
+                        <i class="fas fa-plus"></i>
+                        <h3 class="bd-text">Add a Pet</h3>
+
+                    </div>
+                </div>
+            </div>
+            <button class="button_theme3 bd-text" id="delete-account">DELETE ACCOUNT</button>
+        </div>
+        <!------------------------------------------------------------>
+    </section>
+    <footer class="navbar">
+        <a href="chat-page.html"><i href="#" class="fas fa-comment"></i></a>
+        <a href="../index.html"><i href="#" class="fas fa-paw"></i></a>
+        <a href="account-page.html"><i href="#" class="fas fa-user-circle active"></i></a>
+    </footer>
+    <!-- ------------------------------- Backend ------------------------------------------------ -->
+    <!-- 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥 -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+
+    <script src="../js/firebase-init.js"></script>
+    <script type="text/javascript">
+      const auth=firebase.auth();
+      const db=firebase.firestore();
+      const sto=firebase.storage();
+      db.settings({timestampsInSnapshots:true});
+    </script>
+    <script src="../js/index.js"></script>
+    <script src="../js/animation.js"></script>
+    <script src="../js/keyboard-fix.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/settings-user-account.js"></script>
+    <script src="../js/message.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>

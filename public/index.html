@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff" />
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./img/logoUpet.png">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css\base-style.css" />
+    <link rel="stylesheet" href="css\components-style.css">
+    <link rel="stylesheet" href="css\home-layout.css">
+
+    <link rel="icon" type="image/png" href="./img/logoUpet.png" />
+    <title>U-pet</title>
+</head>
+
+<body>
+    <header class="main-theme">
+        <div class="user-topbar">
+            <h2 class="user-name sb-tl-text" id="page_title"></h2>
+            <a href="pages/account-page.html"><img class="user-icon-img"
+                    src="https://avatars.githubusercontent.com/u/40248211?v=4" alt="user icon"></a>
+        </div>
+    </header>
+    <section class="main-theme" id="layout_section">
+        <div class="parTop-sec" id="home_top_sec">
+            <!------------------------------------------------------------>
+            <div class="input_field_theme bd-text">
+                <i class="fas fa-search sb-tl-text"></i>
+                <input type="text" placeholder="Search" class="input_field">
+            </div>
+            <div class="animals_box">
+                <div class="animal-card " id="pet">
+                    <div class="animal-flex">
+                        <i class="fas fa-paw"></i>
+                        <p class="card-text-animal bd-text">Pets</p>
+                    </div>
+                </div>
+                <div class="animal-card animal-card-inactive" id="dog">
+                    <div class="animal-flex">
+                        <i class="fas fa-dog"></i>
+                        <p class="card-text-animal bd-text">Dogs</p>
+                    </div>
+                </div>
+                <div class="animal-card animal-card-inactive" id="cat">
+                    <div class="animal-flex">
+                        <i class="fas fa-cat"></i>
+                        <p class="card-text-animal bd-text">Cats</p>
+                    </div>
+                </div>
+                <div class="animal-card animal-card-inactive" id="fish">
+                    <div class="animal-flex">
+                        <i class="fas fa-fish"></i>
+                        <p class="card-text-animal bd-text">Fishes</p>
+                    </div>
+                </div>
+                <div class="animal-card animal-card-inactive" id="bird">
+                    <div class="animal-flex">
+                        <i class="fas fa-dove"></i>
+                        <p class="card-text-animal bd-text">Birds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------>
+        <div class="parBot-sec" id="home_bot_sec">
+            <div class="title" id="home_bot_title_sec">
+                <h2 class="sb-tl-text">Nearby</h2>
+                <h3 class="bd-text" id="see-btn-hm">SEE ALL</h3>
+            </div>
+            <div class="show-box-row" id="home_bot_gallery_sec">
+                <!---------->
+                <div class="show-box-column">
+                    <div class="show-card dog">
+                        <div class="show-card-sp">
+                            <a href="./pages/sitter-page.html"> <img
+                                    src="https://th.bing.com/th/id/OIP.c_jHiohp04v0O9D6tcys9AHaFj?w=232&h=180&c=7&o=5&pid=1.7"></a>
+                        </div>
+                        <h3 class="bd-text">Nikodem Church</h3>
+                        <p class="dt-text"><i class="fas fa-location-arrow"></i>1.5 km</p>
+                    </div>
+                    <div class="show-card bird">
+                        <div class="show-card-sp">
+                            <a href="./pages/sitter-page.html"><img
+                                    src="https://img.xcitefun.net/users/2014/07/358117,xcitefun-beautiful-bird-5.jpg"></a>
+                        </div>
+                        <h3 class="bd-text">Aaisha Patton</h3>
+                        <p class="dt-text"><i class="fas fa-location-arrow"></i>2.7 km</p>
+                    </div>
+                    <div class="show-card cat">
+                        <div class="show-card-sp">
+                            <a href="./pages/sitter-page.html"> <img
+                                    src="https://th.bing.com/th/id/R30e77f093500e6beb29f7aa05ff2c7d9?rik=qs2frOiR71kclw&pid=ImgRaw"></a>
+                        </div>
+                        <h3 class="bd-text">Demi Estes</h3>
+                        <p class="dt-text"><i class="fas fa-location-arrow"></i>1 km</p>
+                    </div>
+                    <div class="show-card fish">
+                        <div class="show-card-sp">
+                            <a href="./pages/sitter-page.html"> <img
+                                    src="https://4.bp.blogspot.com/-qamBY31QVwQ/ThtcXzeRXzI/AAAAAAAAAB0/E4uYk2bYbsM/s1600/Betta-Fish-Pic.jpg"></a>
+                        </div>
+                        <h3 class="bd-text">Kornelia Busby</h3>
+                        <p class="dt-text"><i class="fas fa-location-arrow"></i>1.2 km</p>
+                    </div>
+                </div>
+                <!---------->
+                <div class="show-box-column">
+                    <div class="show-card cat">
+                        <div class="show-card-sp">
+                            <a href="./pages/sitter-page.html"> <img
+                                    src="https://th.bing.com/th/id/Rd81708cd971825245c5b5915903b7884?rik=buM02ATWqXTopA&pid=ImgRaw"></a>
+                        </div>
+                        <h3 class="bd-text">Ayat Farrow</h3>
+                        <p class="dt-text"><i class="fas fa-location-arrow"></i>1.3 km</p>
+                    </div>
+                    <div class="show-card fish">
+                        <div class="show-card-sp">
+                            <a href="./pages/sitter-page.html"> <img
+                                    src="https://th.bing.com/th/id/Rb0886a523c28a4e9e5d8974a1a882b59?rik=CouA7%2fz5wcbjfQ&riu=http%3a%2f%2fdreamicus.com%2fdata%2ffish%2ffish-02.jpg&ehk=CvqLlmy6obbZg5DhjAhdyN%2bTIMjY1fQ6SNrQ3FQzk%2fw%3d&risl=&pid=ImgRaw"></a>
+                        </div>
+                        <h3 class="bd-text">Becky Stephens</h3>
+                        <p class="dt-text"><i class="fas fa-location-arrow"></i>2 km</p>
+                    </div>
+                    <div class="show-card dog">
+                        <div class="show-card-sp">
+                            <a href="./pages/sitter-page.html"> <img
+                                    src="https://i.pinimg.com/736x/eb/aa/37/ebaa3721457ef63f02793df8b5a49fe9--pointer-dog-hunting-dogs.jpg"></a>
+                        </div>
+                        <h3 class="bd-text">Fergus Dunlop</h3>
+                        <p class="dt-text"><i class="fas fa-location-arrow"></i>0.5 km</p>
+                    </div>
+                    <div class="show-card bird">
+                        <div class="show-card-sp">
+                            <a href="./pages/sitter-page.html"> <img
+                                    src="https://th.bing.com/th/id/R2e8b989164ff69243af6227f42455ee4?rik=tMqXRfSQZZmF7Q&pid=ImgRaw"></a>
+                        </div>
+                        <h3 class="bd-text">Sahara David</h3>
+                        <p class="dt-text"><i class="fas fa-location-arrow"></i>1.7 km</p>
+                    </div>
+                    <!---------->
+                </div>
+                <div class="message-end-gallery">
+                    <h3 class="sb-tl-text">There seem to be no more pets</h3>
+                    <button class="button_theme2 bd-text" id="home_bot_sec_btn">home</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!------------------------------------------------------------>
+    </section>
+
+    <footer class="navbar">
+        <a href="pages/chat-page.html"><i href="#" class="fas fa-comment"></i></a>
+        <a href="index.html"><i href="#" class="fas fa-paw active"></i></a>
+        <a href="pages/account-page.html"><i href="#" class="fas fa-user-circle"></i></a>
+    </footer>
+
+    <!-- ------------------------------- Backend ------------------------------------------------ -->
+    <!-- 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥 -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+    <script src="js/firebase-init.js"></script>
+    <script type="text/javascript">
+      const auth=firebase.auth();
+      const db=firebase.firestore();
+      db.settings({timestampsInSnapshots:true});
+    </script>
+    <script src="js/index.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/keyboard-fix.js"></script>
+    <script src="js/home-btns.js"></script>
+    <script src="js/filter-home.js"></script>
+    <script src="js/main-page.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+
+</html>

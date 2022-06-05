@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/base-style.css" />
+    <link rel="stylesheet" href="../css/components-style.css">
+    <link rel="stylesheet" href="../css/home-layout.css">
+    <link rel="stylesheet" href="../css/account-layout.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="icon" type="image/png" href="../img/logoUpet.png" />
+    <title>U-pet</title>
+</head>
+
+<body>
+    <header class="main-theme">
+
+    </header>
+    <section class="main-theme">
+        <div class="parTop-userpage-sec">
+            <img class="user-account-img" src="https://avatars.githubusercontent.com/u/40248211?v=4" alt="user icon">
+            <h2 class="user-name tl-text" id="user-name"></h2>
+        </div>
+        <!------------------------------------------------------------>
+        <div class="parBot-userpage-sec" id="home_bot_sec">
+            <div href="./settings-page.html" class="sec-card-opt">
+                <h4 class="card-title sb-tl-text"><i class="fas fa-bell icon-size"></i>Notifiche</h4>
+                <input type="checkbox" class="switch_box">
+            </div>
+            <a href="./settings-page.html" class="sec-card-opt">
+                <h4 class="card-title sb-tl-text"><i class="fas fa-user-shield icon-size"></i>Sicurezza</h4>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            <a href="./settings-page.html" class="sec-card-opt">
+                <h4 class="card-title sb-tl-text"><i class="fas fa-users-cog icon-size"></i>Impostazioni</h4>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            <a href="./settings-page.html" class="sec-card-opt">
+                <h4 class="card-title sb-tl-text"><i class="fas fa-exclamation-circle icon-size"></i>Informazioni</h4>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+        <!------------------------------------------------------------>
+    </section>
+    <footer class="navbar">
+        <a href="chat-page.html"><i href="#" class="fas fa-comment"></i></a>
+        <a href="../index.html"><i href="#" class="fas fa-paw"></i></a>
+        <a href="account-page.html"><i href="#" class="fas fa-user-circle active"></i></a>
+    </footer>
+    <!-- ------------------------------- Backend ------------------------------------------------ -->
+    <!-- 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥 -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+    <script src="../js/firebase-init.js"></script>
+    <script type="text/javascript">
+      const auth=firebase.auth();
+      const db=firebase.firestore();
+      db.settings({timestampsInSnapshots:true});
+    </script>
+    <script src="../js/index.js"></script>
+    <script src="../js/animation.js"></script>
+    <script src="../js/keyboard-fix.js"></script>
+    <script src="../js/account.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>
